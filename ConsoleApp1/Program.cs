@@ -1,11 +1,11 @@
-﻿int[] array  = new int[] { 2, 4, 3, 7, 5, 9 } ;
-int m = int.MaxValue;
+﻿int[] array  = new int[] { 8, 0, 4, 4, 2, 3 } ;
+int m = 0;
 
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i] % 2 != 0 && array[i] < m)
+    if (array[i] % 2 == 0)
     {
-        m = array[i];
+        m += array[i];
     }
 }
 Console.WriteLine(m);
