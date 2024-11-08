@@ -1,18 +1,19 @@
-﻿using Tyuiu.KosyanovDV.Sprint4.Task1.V17.Lib;
+﻿using Tyuiu.KosyanovDV.Sprint4.Task2.V20.Lib;
 
-namespace Tyuiu.KosyanovDV.Sprint4.Task1.V17
+namespace Tyuiu.KosyanovDV.Sprint4.Task2.V20
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             DataService ds = new DataService();
             Console.Title = "Спринт | Выполнил: Косьянов Д.В. | ПКТб-24-1";
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* Спринт #4                                                     *");
-            Console.WriteLine("* Тема: Одномерные массивы (статический ввод)                   *");
-            Console.WriteLine("* Задание #1                                                    *");
-            Console.WriteLine("* Вариант #17                                                   *");
+            Console.WriteLine("* Тема: Одномерные массивы (Генератор случайных чисел)          *");
+            Console.WriteLine("* Задание #2                                                    *");
+            Console.WriteLine("* Вариант #20                                                   *");
             Console.WriteLine("* Выполнил : Косьянов Даниил Васильевич | ПКТб-24-1             *");
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* УСЛОВИЕ :                                                     *");
@@ -27,17 +28,17 @@ namespace Tyuiu.KosyanovDV.Sprint4.Task1.V17
             len = Convert.ToInt32(Console.ReadLine());
 
             int[] array = new int[len];
-            for (int i = 0; i < len; i++) 
+            for (int i = 0; i < len; i++)
             {
-                Console.Write($"* Введите {i} элемент массива: ");
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                array[i] = rnd.Next(2, 8);
+                Console.WriteLine(array[i]);
             }
 
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                    *");
             Console.WriteLine("*****************************************************************");
             var res = ds.Calculate(array);
-            Console.WriteLine($"* {res}                                                          *");
+            Console.WriteLine($"* {res}                                                          ");
             Console.WriteLine("*****************************************************************");
             Console.ReadKey();
 
