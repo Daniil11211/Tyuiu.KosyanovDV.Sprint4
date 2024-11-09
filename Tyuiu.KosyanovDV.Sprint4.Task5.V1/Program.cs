@@ -12,13 +12,13 @@ namespace Tyuiu.KosyanovDV.Sprint4.Task5.V1
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* Спринт #4                                                     *");
             Console.WriteLine("* Тема: Двумерные массивы (Генератор случайных чисел)           *");
-            Console.WriteLine("* Задание #3                                                    *");
-            Console.WriteLine("* Вариант #21                                                   *");
+            Console.WriteLine("* Задание #5                                                    *");
+            Console.WriteLine("* Вариант #1                                                    *");
             Console.WriteLine("* Выполнил : Косьянов Даниил Васильевич | ПКТб-24-1             *");
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* УСЛОВИЕ :                                                     *");
-            Console.WriteLine("* Дан массив чисел. Найти произведение последнего столбца       *");
-            Console.WriteLine("* массива.                                                      *");
+            Console.WriteLine("* Дан массив чисел, заполненный числами в диапазоне от -9 до 8. *");
+            Console.WriteLine("* Заменить положительные числа на 1                             *");
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                             *");
             Console.WriteLine("*                                                               *");
