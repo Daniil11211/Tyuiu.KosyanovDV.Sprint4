@@ -1,16 +1,17 @@
-﻿using Tyuiu.KosyanovDV.Sprint4.Task4.V24.Lib;
+﻿using Tyuiu.KosyanovDV.Sprint4.Task5.V1.Lib;
 
-namespace Tyuiu.KosyanovDV.Sprint4.Task4.V24
+namespace Tyuiu.KosyanovDV.Sprint4.Task5.V1
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             DataService ds = new DataService();
             Console.Title = "Спринт | Выполнил: Косьянов Д.В. | ПКТб-24-1";
             Console.WriteLine("*****************************************************************");
             Console.WriteLine("* Спринт #4                                                     *");
-            Console.WriteLine("* Тема: Двумерные массивы (Ввод с клавиатуры)                   *");
+            Console.WriteLine("* Тема: Двумерные массивы (Генератор случайных чисел)           *");
             Console.WriteLine("* Задание #3                                                    *");
             Console.WriteLine("* Вариант #21                                                   *");
             Console.WriteLine("* Выполнил : Косьянов Даниил Васильевич | ПКТб-24-1             *");
@@ -38,8 +39,10 @@ namespace Tyuiu.KosyanovDV.Sprint4.Task4.V24
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    array[i, j] = Convert.ToInt32(Console.ReadLine());
+                    array[i, j] = rnd.Next(-9, 9);
+                    Console.Write($"{array[i, j]}, ");
                 }
+                Console.WriteLine(" ");
             }
 
             Console.WriteLine("*****************************************************************");
@@ -53,6 +56,7 @@ namespace Tyuiu.KosyanovDV.Sprint4.Task4.V24
                 {
                     Console.Write($"{array[i, j]}, ");
                 }
+                Console.WriteLine(" ");
             }
             Console.WriteLine(" ");
             Console.WriteLine("*****************************************************************");

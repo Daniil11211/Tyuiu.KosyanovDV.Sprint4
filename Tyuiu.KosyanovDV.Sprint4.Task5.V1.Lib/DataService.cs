@@ -1,7 +1,7 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint4;
-namespace Tyuiu.KosyanovDV.Sprint4.Task4.V24.Lib
+namespace Tyuiu.KosyanovDV.Sprint4.Task5.V1.Lib
 {
-    public class DataService : ISprint4Task4V24
+    public class DataService : ISprint4Task5V1
     {
         public int[,] Calculate(int[,] matrix)
         {
@@ -9,7 +9,7 @@ namespace Tyuiu.KosyanovDV.Sprint4.Task4.V24.Lib
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (matrix[i, j] % 2 == 0)
+                    if (matrix[i, j] > 0)
                     {
                         matrix[i, j] = 1;
                     }
