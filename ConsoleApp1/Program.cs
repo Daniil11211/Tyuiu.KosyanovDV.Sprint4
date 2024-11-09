@@ -1,11 +1,13 @@
-﻿int[] array  = new int[] { 6, 3, 4, 7, 8, 1 } ;
-int m = int.MaxValue;
-
-for (int i = 0; i < array.Length; i++)
+﻿int[,] array = new int[,] { { -1, 2, 3 }, { 4, -5, 6 }, { 7, -8, 9 } };
+int s = 0;
+for (int i = 0; i < array.GetLength(0); i++)
 {
-    if (array[i] % 2 == 0 && array[i] < m)
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        m = array[i];
+        if (array[i, j] % 2 == 0)
+        {
+            s += array[i, j];
+        }
     }
 }
-Console.WriteLine(m);
+Console.WriteLine(s);
